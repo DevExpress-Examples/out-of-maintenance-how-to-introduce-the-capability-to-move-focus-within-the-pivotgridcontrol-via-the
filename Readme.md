@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MyPivotGridControl.cs](./CS/Q200703/MyPivotGridControl.cs) (VB: [MyPivotGridControl.vb](./VB/Q200703/MyPivotGridControl.vb))
+<!-- default file list end -->
 # How to introduce the capability to move focus within the PivotGridControl via the Tab key
 
 
