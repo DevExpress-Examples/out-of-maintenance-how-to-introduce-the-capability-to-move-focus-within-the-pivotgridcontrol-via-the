@@ -3,11 +3,7 @@
 
 * [MyPivotGridControl.cs](./CS/Q200703/MyPivotGridControl.cs) (VB: [MyPivotGridControl.vb](./VB/Q200703/MyPivotGridControl.vb))
 <!-- default file list end -->
-# How to introduce the capability to move focus within the PivotGridControl via the Tab key
+# How to Override the Behavior of the Shift-Tab key in PivotGridControl
 
 
-<p>By default, the PivotGridCotnrol doesn't provide this functionality, because it isn't intended to be used for editing values. However, if your application's design requires this feature, you can manually implement it within a PivotGridControl descendant by overriding the PivotGridViewInfo.KeyDown method. It's also necessary to override the PivotGridControl.ProcessDialogKey method, because by default the Tab key is used to move focus to another control.</p>
-
-<br/>
-
-
+This example demonstrates how to create a PivotGridControl descendant and override the **PivotGridViewInfo.KeyDown** and **PivotGridControl.ProcessDialogKey** methods to change **Shift-Tab** key behavior.

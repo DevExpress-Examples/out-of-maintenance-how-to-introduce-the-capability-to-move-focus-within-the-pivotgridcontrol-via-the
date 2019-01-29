@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports DevExpress.XtraPivotGrid
+﻿Imports DevExpress.XtraPivotGrid
 Imports DevExpress.XtraPivotGrid.Data
 Imports System.Windows.Forms
 Imports DevExpress.XtraPivotGrid.ViewInfo
@@ -8,6 +7,7 @@ Imports System.Drawing
 Namespace DXSample
 	Public Class MyPivotGridControl
 		Inherits PivotGridControl
+
 		Public Sub New()
 			MyBase.New()
 		End Sub
@@ -16,7 +16,7 @@ Namespace DXSample
 		End Sub
 
 		Protected Overrides Function ProcessDialogKey(ByVal keyData As Keys) As Boolean
-			Dim key As Keys = keyData And ((Not Keys.Modifiers))
+			Dim key As Keys = keyData And (Not Keys.Modifiers)
 			If key = Keys.Tab Then
 				Return False
 			End If
@@ -30,6 +30,7 @@ Namespace DXSample
 
 	Public Class MyPivotGridViewInfo
 		Inherits PivotGridViewInfo
+
 		Public Sub New(ByVal data As PivotGridViewInfoData)
 			MyBase.New(data)
 		End Sub
@@ -66,6 +67,7 @@ Namespace DXSample
 
 	Public Class MyPivotGridViewInfoData
 		Inherits PivotGridViewInfoData
+
 		Public Sub New()
 			MyBase.New()
 		End Sub

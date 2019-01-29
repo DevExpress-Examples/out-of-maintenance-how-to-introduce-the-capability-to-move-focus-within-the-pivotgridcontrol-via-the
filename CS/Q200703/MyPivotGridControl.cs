@@ -9,7 +9,8 @@ namespace DXSample {
         public MyPivotGridControl() : base() { }
         public MyPivotGridControl(PivotGridViewInfoData viewInfoData) : base(viewInfoData) { }
 
-        protected override bool ProcessDialogKey(Keys keyData) {
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
             Keys key = keyData & (~Keys.Modifiers);
             if (key == Keys.Tab) return false;
             return base.ProcessDialogKey(keyData);
@@ -40,7 +41,8 @@ namespace DXSample {
             VisualItems.FocusedCell = newFocusedCell;
         }
 
-        public override void KeyDown(KeyEventArgs e) {
+        public override void KeyDown(KeyEventArgs e)
+        {
             if (e.KeyCode == Keys.Tab)
                 ProcessTabKey(e.Shift);
             else base.KeyDown(e);
